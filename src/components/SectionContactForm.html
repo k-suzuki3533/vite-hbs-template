@@ -1,0 +1,22 @@
+<section class="p-contact-form">
+  <div class="l-inner">
+    <h1 class="p-contact-form__title">{{pageTitle}}</h1>
+    <form class="c-form" action="#" method="post">
+      <div class="c-form__group">
+        <label class="c-form__label" for="name">お名前</label>
+        <input class="c-form__input" type="text" id="name" name="name" />
+      </div>
+      <div class="c-form__group">
+        <label class="c-form__label" for="email">メールアドレス</label>
+        <input class="c-form__input" type="email" id="email" name="email" />
+      </div>
+      <div class="c-form__group">
+        <label class="c-form__label" for="message">お問い合わせ内容</label>
+        <textarea class="c-form__textarea" id="message" name="message" rows="5"></textarea>
+      </div>
+      <div class="c-form__actions">
+        {{> UiButton }}
+      </div>
+    </form>
+  </div>
+</section>

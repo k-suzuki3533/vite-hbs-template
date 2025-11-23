@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    {{> LayoutHead }}
+  </head>
+  <body class="l-body p-about">
+    {{> LayoutHeader }}
+
+    <main class="l-main">
+      {{> SectionAboutIntro }}
+
+      <section class="p-about__team">
+        <div class="l-inner">
+          <h2 class="c-heading">メンバー</h2>
+          <div class="p-about__members">
+            {{#each members}}
+              {{> UiCard }}
+            {{/each}}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{> LayoutFooter }}
+  </body>
+</html>
